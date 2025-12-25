@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality interior materials - False Ceiling, Paints, and Wall Putty in Meerut">
+    <title>Interior Solutions - False Ceiling,Wall Putty & Paints</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 60px 20px;
+
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #667eea;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 60px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            object-fit:cover;
+            
+           
+            
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .category-image {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .category-content {
+            padding: 1.5rem;
+        }
+
+        .category-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .category-content p {
+            color: #45ff2c;
+            margin-bottom: 1rem;
+            font-style:bold;
+           
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            
+            
+            
+        }
+
+        .product-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #999;
+            
+
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        .product-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info p {
+            background-color: rgb(255, 26, 26);
+            color: #9e9191;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: opacity 0.3s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .contact-details {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+
+        .phone-number {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .modal-content h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Laxmi Interior Solutions</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Transform Your Space</h2>
+        <p>Quality materials for false ceiling, paints, and wall putty - everything you need for perfect interiors</p>
+    </section>
+
+    <div class="container" id="categories">
+        <h2 class="section-title">Our Categories</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-image"><img src="3.jpeg" alt=""></div>
+                <div class="category-content">
+                    <h3>False Ceiling</h3>
+                    <p>Premium quality false ceiling materials including POP, gypsum boards, and grid systems for elegant interior designs.</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image"><img src="2.jpeg" alt=""></div>
+                <div class="category-content">
+                    <h3>Paints</h3>
+                    <p>Wide range of interior and exterior paints with various finishes - emulsion, enamel, and texture paints.</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image"><img src="2.jpeg" alt=""></div>
+                <div class="category-content">
+                    <h3>Wall Putty</h3>
+                    <p>High-quality wall putty materials for smooth wall finishing and perfect paint application.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        
+        <h3 style="margin: 2rem 0 1rem; color: #667eea;">False Ceiling Materials</h3>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image"><img src="4.jpeg" alt="gypsum_Board"></div>
+                <div class="product-info">
+                    <h4>Gypsum Board</h4>
+                    <p>High-quality gypsum boards for durable false ceiling installations</p>
+                    <button class="btn" onclick="showContact('Gypsum Board')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="4.jpeg" alt="gypsum_Board"></div>
+                <div class="product-info">
+                    <h4>POP Material</h4>
+                    <p>Premium Plaster of Paris for custom ceiling designs</p>
+                    <button class="btn" onclick="showContact('POP Material')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="4.jpeg" alt="gypsum_Board"></div>
+                <div class="product-info">
+                    <h4>Grid System</h4>
+                    <p>Complete metal grid system for suspended ceilings</p>
+                    <button class="btn" onclick="showContact('Grid System')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin: 3rem 0 1rem; color: #667eea;">Paint Collection</h3>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">🎨</div>
+                <div class="product-info">
+                    <h4>Emulsion Paint</h4>
+                    <p>Premium quality interior emulsion paints in various colors</p>
+                    <button class="btn" onclick="showContact('Emulsion Paint')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🎨</div>
+                <div class="product-info">
+                    <h4>Exterior Paint</h4>
+                    <p>Weather-resistant exterior paints for lasting protection</p>
+                    <button class="btn" onclick="showContact('Exterior Paint')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🎨</div>
+                <div class="product-info">
+                    <h4>Texture Paint</h4>
+                    <p>Create stunning wall textures with our specialized paints</p>
+                    <button class="btn" onclick="showContact('Texture Paint')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin: 3rem 0 1rem; color: #667eea;">Wall Putty Products</h3>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">🧱</div>
+                <div class="product-info">
+                    <h4>White Wall Putty</h4>
+                    <p>Smooth finish white cement-based wall putty</p>
+                    <button class="btn" onclick="showContact('White Wall Putty')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🧱</div>
+                <div class="product-info">
+                    <h4>Acrylic Putty</h4>
+                    <p>Premium acrylic-based putty for superior adhesion</p>
+                    <button class="btn" onclick="showContact('Acrylic Putty')">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🧱</div>
+                <div class="product-info">
+                    <h4>Exterior Putty</h4>
+                    <p>Weather-resistant putty for outdoor applications</p>
+                    <button class="btn" onclick="showContact('Exterior Putty')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Have questions or want to place an order? Contact us directly!</p>
+            <div class="contact-details">
+                <p><strong>Call us at:</strong></p>
+                <p class="phone-number">+91 7033863192</p>
+                <p style="margin-top: 1.5rem;"><strong>Address:</strong><br>
+                Near Petrol Pump K.C.T.C College Road Raxal , East Champran , Bihar<br>
+                </p>
+                <p style="margin-top: 1.5rem;"><strong>Email:</strong><br>
+                ak5981@srmist.edu.in</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Laxmi Interior Solutions. All rights reserved.</p>
+        <p>Raxaul, Motihari, Bihar</p>
+    </footer>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3>Contact Seller</h3>
+            <p>For purchasing <strong id="productName"></strong>, please call:</p>
+            <p class="phone-number" style="text-decoration:underline">+91 7033863192   ,7033577098</p>
+            <p style="margin-top: 1rem; color: #666; ">Or visit our shop in College Road, Raxaul</p>
+        </div>
+    </div>
+
+    <script>
+        function showContact(productName) {
+            document.getElementById('productName').textContent = productName;
+            const modal = document.getElementById('contactModal');
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('contactModal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(e) {
+            const modal = document.getElementById('contactModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
